@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#050914">
+  <meta name="description" content="Portofolio pribadi Wisnu Rifki Wijaya, mahasiswa Informatika.">
+  <title>Wisnu Rifki Wijaya — Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <canvas id="stars" aria-hidden="true"></canvas>
+  <div class="nebula nebula-one"></div>
+  <div class="nebula nebula-two"></div>
+  <div class="lightning" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Wisnu Portfolio"><span></span></a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Buka menu" aria-expanded="false">☰</button>
+    <nav class="nav" id="nav">
+      <a class="active" href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a class="header-cta" href="#contact">Let's Talk <span>↗</span></a>
+  </header>
+
+  <main>
+    <section class="hero section-wrap" id="home">
+      <div class="hero-copy reveal">
+        <div class="availability"><span class="status-dot"></span> INFORMATICS STUDENT</div>
+        <p class="eyebrow">WELCOME TO MY DIGITAL SPACE</p>
+        <h1>Hi, I'm<br><span class="gradient-text">Wisnu Rifki</span><br>Wijaya<span class="blue-dot"></span></h1>
+        <p class="hero-description">Mahasiswa Informatika yang tertarik pada teknologi, pengembangan web, analisis data, dan pemecahan masalah. Selalu belajar, bereksperimen, dan membangun hal baru.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#portfolio">Explore Portfolio <span>↗</span></a>
+          <a class="button button-ghost" href="#about"><span class="play-icon">▶</span> More About Me</a>
+        </div>
+        <div class="hero-meta">
+          <div><strong>01</strong><span>Curious Mind</span></div>
+          <div><strong>02</strong><span>Creative Builder</span></div>
+          <div><strong>03</strong><span>Always Learning</span></div>
+        </div>
+      </div>
+
+      <div class="hero-visual reveal">
+        <div class="orbit orbit-one"></div>
+        <div class="orbit orbit-two"></div>
+        <div class="portrait-card">
+          <div class="portrait-top"><span>WISNU RIFKI W</span><span class="live-mark">● ONLINE</span></div>
+          <div class="portrait-placeholder" id="portraitPlaceholder">
+            <div class="avatar-glow"></div>
+            <div class="avatar-initials">W<span>.</span></div>
+            <div class="avatar-caption">YOUR PHOTO HERE</div>
+          </div>
+          <img class="profile-photo" id="profilePhoto" src="Wisnu.jpeg" alt="Foto profil Wisnu Rifki Wijaya" onerror="this.style.display='none'">
+          <div class="portrait-bottom"><span>INFORMATICS / 2026</span><span>INDONESIA</span></div>
+        </div>
+        <div class="float-chip chip-top"><span class="chip-icon">✦</span><div><strong>Creative</strong><small>Think & build</small></div></div>
+        <div class="float-chip chip-bottom"><span class="chip-icon blue">⌘</span><div><strong>Developer</strong><small>In progress...</small></div></div>
+        <div class="crosshair crosshair-a">+</div><div class="crosshair crosshair-b">+</div>
+      </div>
+    </section>
+
+    <section class="intro-strip section-wrap reveal">
+      <span class="strip-line"></span>
+      <p>TURNING IDEAS <span>INTO REALITY</span></p>
+      <span class="strip-line"></span>
+    </section>
+
+    <section class="content-section section-wrap" id="about">
+      <div class="section-heading reveal">
+        <p class="eyebrow">01 / ABOUT ME</p>
+        <h2>Building my path<br>in <span class="gradient-text">technology.</span></h2>
+        <p class="section-subtitle">Sedikit cerita tentang saya, latar belakang, dan hal yang sedang saya pelajari.</p>
+      </div>
+      <div class="about-grid">
+        <article class="glass-card about-main reveal">
+          <div class="card-icon">✳</div>
+          <h3>Who am I?</h3>
+          <p>Saya Wisnu Rifki Wijaya, mahasiswa Program Studi Informatika di Universitas Sebelas April. Saya memiliki minat pada pemrograman, teknologi digital, UI/UX, serta analisis data. Saya menikmati proses belajar, memecahkan masalah, dan mengubah ide menjadi proyek nyata.</p>
+          <div class="mini-tags"><span>Problem Solving</span><span>Teamwork</span><span>Growth Mindset</span></div>
+        </article>
+        <article class="glass-card info-card reveal">
+          <p class="eyebrow">QUICK PROFILE</p>
+          <div class="info-row"><span>Nama</span><strong>Wisnu Rifki Wijaya</strong></div>
+          <div class="info-row"><span>Pendidikan</span><strong>Universitas Sebelas April</strong></div>
+          <div class="info-row"><span>Program Studi</span><strong>Informatika</strong></div>
+          <div class="info-row"><span>Fokus</span><strong>Web & Data</strong></div>
+          <div class="info-row"><span>Location</span><strong>Indonesia</strong></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="content-section section-wrap" id="skills">
+      <div class="section-heading reveal">
+        <p class="eyebrow">02 / WHAT I DO</p>
+        <h2>Skills & <span class="gradient-text">interests.</span></h2>
+        <p class="section-subtitle">Bidang yang sedang saya pelajari dan kembangkan.</p>
+      </div>
+      <div class="skills-grid">
+        <article class="glass-card skill-card reveal"><div class="skill-symbol">&lt;/&gt;</div><h3>Web Development</h3><p>Membuat halaman web menggunakan HTML, CSS, dan JavaScript.</p><div class="skill-line"><span style="width:72%"></span></div><small>Learning & practicing</small></article>
+        <article class="glass-card skill-card reveal"><div class="skill-symbol">⌘</div><h3>Programming</h3><p>Logika algoritma, dasar pemrograman, dan pemecahan masalah.</p><div class="skill-line"><span style="width:65%"></span></div><small>Learning & practicing</small></article>
+        <article class="glass-card skill-card reveal"><div class="skill-symbol">▦</div><h3>Data Analysis</h3><p>Eksplorasi data dan pengenalan machine learning dengan Python.</p><div class="skill-line"><span style="width:60%"></span></div><small>Learning & practicing</small></article>
+        <article class="glass-card skill-card reveal"><div class="skill-symbol">◈</div><h3>UI / UX Design</h3><p>Mempelajari desain antarmuka dan pengalaman pengguna.</p><div class="skill-line"><span style="width:58%"></span></div><small>Learning & practicing</small></article>
+      </div>
+      <p class="note">Catatan: indikator skill ini bersifat visual, bukan hasil pengukuran resmi. Ubah sesuai kemampuanmu yang sebenarnya.</p>
+    </section>
+
+    <section class="content-section section-wrap" id="portfolio">
+      <div class="section-heading portfolio-heading reveal">
+        <div><p class="eyebrow">03 / SELECTED WORK</p><h2>My <span class="gradient-text">portfolio.</span></h2></div>
+        <p class="section-subtitle">Beberapa proyek akademik dan latihan yang bisa kamu kembangkan.</p>
+      </div>
+      <div class="project-grid">
+        <article class="project-card reveal">
+          <div class="project-preview preview-purple"><span class="preview-label">RESEARCH / UI UX</span><div class="preview-orb"></div><div class="preview-title">DIGITAL<br>EXPERIENCE</div><span class="preview-grid"></span></div>
+          <div class="project-body"><div class="project-index">PROJECT 01 <span>↗</span></div><h3>Analisis Usability DANA</h3><p>Penelitian usability aplikasi dompet digital dengan pendekatan kuantitatif dan SmartPLS.</p><div class="project-tags"><span>SmartPLS</span><span>Research</span><span>UI/UX</span></div></div>
+        </article>
+        <article class="project-card reveal">
+          <div class="project-preview preview-cyan"><span class="preview-label">DATA / MACHINE LEARNING</span><div class="chart-bars"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div><div class="preview-title">SENTIMENT<br>ANALYSIS</div></div>
+          <div class="project-body"><div class="project-index">PROJECT 02 <span>↗</span></div><h3>YouTube Sentiment Analysis</h3><p>Latihan analisis komentar untuk mengelompokkan sentimen positif, negatif, dan netral menggunakan Python.</p><div class="project-tags"><span>Python</span><span>Colab</span><span>Naive Bayes</span></div></div>
+        </article>
+        <article class="project-card reveal">
+          <div class="project-preview preview-blue"><span class="preview-label">WEB / FRONT END</span><div class="browser-art"><b></b><b></b><b></b><span></span><span></span><span></span></div><div class="preview-title">PERSONAL<br>WEBSITE</div></div>
+          <div class="project-body"><div class="project-index">PROJECT 03 <span>↗</span></div><h3>Personal Portfolio Website</h3><p>Website responsif untuk menampilkan profil, kemampuan, proyek, dan informasi kontak.</p><div class="project-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div></div>
+        </article>
+        <article class="project-card reveal">
+          <div class="project-preview preview-pink"><span class="preview-label">ACADEMIC / DATA</span><div class="data-rings"><i></i><i></i><i></i></div><div class="preview-title">DATA<br>EXPLORATION</div></div>
+          <div class="project-body"><div class="project-index">PROJECT 04 <span>↗</span></div><h3>Data Exploration</h3><p>Ruang untuk menampilkan proyek eksplorasi dataset, visualisasi, atau tugas akademik lainnya.</p><div class="project-tags"><span>Data</span><span>Visualization</span><span>Python</span></div></div>
+        </article>
+      </div>
+      <p class="note">Proyek di atas adalah contoh tampilan. Sesuaikan dengan hasil kerja yang benar-benar sudah kamu buat, dan tambahkan tautan demo atau repositori bila tersedia.</p>
+    </section>
+
+    <section class="contact-section section-wrap" id="contact">
+      <div class="contact-card reveal">
+        <div class="contact-glow"></div>
+        <p class="eyebrow">04 / GET IN TOUCH</p>
+        <h2>Have an idea?<br><span class="gradient-text">Let's connect.</span></h2>
+        <p>Saya terbuka untuk belajar bersama, kolaborasi proyek, dan koneksi baru di bidang teknologi.</p>
+        <div class="contact-actions">
+          <a class="button button-primary" href="wisnurifki9@gmail.com" id="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox">Send an Email <span>↗</span></a>
+          <a class="button button-ghost" href="https://github.com/" target="_blank" rel="noopener noreferrer">GitHub Profile <span>↗</span></a>
+        </div>
+        <div class="contact-foot"><span><i class="status-dot"></i> OPEN TO OPPORTUNITIES</span><span>WISNU RIFKI WIJAYA © <b id="year"></b></span></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer"><a class="brand" href="#home"><span></span></a><span>Designed & built with curiosity.</span><a href="#home">Back to top ↑</a></footer>
+  <script src="script.js"></script>
+</body>
+</html>
